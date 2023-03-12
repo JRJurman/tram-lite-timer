@@ -1,0 +1,44 @@
+:root {
+  color-scheme: dark light;
+}
+
+body {
+  margin: 0;
+}
+
+timer-app {
+  font-size: 3em;
+}
+
+timer-sliders {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+timer-slider {
+  overflow: scroll;
+  width: 100%;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  scroll-snap-type: y mandatory;
+}
+
+timer-option {
+  display: block;
+  scroll-snap-align: center;
+  padding-left: 0.5em;
+  opacity: 0.5;
+}
+
+timer-option[active] {
+  opacity: 1;
+}
+
+timer-selection {
+  border: solid 5px white;
+  position: fixed;
+  top: calc(50vh - 0.6em);
+  width: 100%;
+  height: 1em;
+}
